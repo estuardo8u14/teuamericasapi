@@ -65,7 +65,7 @@ def post_contacto(item:Item):
 
     mycursor = mydb.cursor()
 
-    sql = "INSERT INTO "+ item.table +" (nombre, correo, asunto, mensaje) VALUES (%s, %s, %s, %s)"
+    sql = "INSERT INTO "+ "teuweb" +" (nombre, correo, asunto, mensaje) VALUES (%s, %s, %s, %s)"
     val = (
         item.nombre,
         item.correo,
