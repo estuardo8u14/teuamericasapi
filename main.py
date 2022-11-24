@@ -30,12 +30,12 @@ conf = ConnectionConfig(
 
 app = FastAPI()
 
-origins = ["https://teu-americas-logistics.netlify.app"]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins = origins,
-    allow_credentials = True,
+    allow_credentials = False,
     allow_methods = ["*"],
     allow_headers = ["*"],
     expose_headers = ["*"],
