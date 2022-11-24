@@ -30,17 +30,7 @@ conf = ConnectionConfig(
 
 app = FastAPI()
 
-origins = [
-    "https://teu-americas-logistics.netlify.app",
-    "http://localhost",
-    "http://localhost:3000/",
-    "http://localhost:3000",
-    "https://teu-americas-logistics.netlify.app/ahorros",
-    "https://teu-americas-logistics.netlify.app/",
-    "https://teu-americas-logistics.netlify.app",
-    "https://teuamericasapi.herokuapp.com",
-    
-    ]
+origins = ["http://localhost:3000"]
 
 app.add_middleware(
     CORSMiddleware,
