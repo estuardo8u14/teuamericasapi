@@ -37,9 +37,7 @@ origins = ["http://localhost",
     "https://teu-americas-logistics.netlify.app/",
     "https://teu-americas-logistics.netlify.app",
     " https://teuamericasapi.herokuapp.com",
-    "*",]
-
-origins = ["*"]
+    ]
 
 app.add_middleware(
     CORSMiddleware,
