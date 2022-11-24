@@ -35,10 +35,7 @@ origins = ["http://localhost",
     "http://localhost:3000",
     "https://teu-americas-logistics.netlify.app",
     "https://teu-americas-logistics.netlify.app/ahorros",
-    " https://teuamericasapi.herokuapp.com",
-    "*",]
-    
-origins = ["*"]
+    " https://teuamericasapi.herokuapp.com",]
 
 app.add_middleware(
     CORSMiddleware,
@@ -46,7 +43,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=["*"]
+    expose_headers=["*"],
 )
 
 class Item(BaseModel):
