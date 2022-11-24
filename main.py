@@ -30,7 +30,10 @@ conf = ConnectionConfig(
 
 app = FastAPI()
 
-origins = ["http://localhost:3000"]
+origins = [
+    "http://localhost:3000",
+    "http://localhost:3000/ahorros",
+]
 
 app.add_middleware(
     CORSMiddleware,
