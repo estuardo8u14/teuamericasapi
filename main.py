@@ -31,10 +31,7 @@ conf = ConnectionConfig(
 app = FastAPI()
 
 origins = [
-    "http://localhost:3000",
-    "localhost:3000",
     "https://teu-americas-logistics.netlify.app"
-
 ]
 
 app.add_middleware(
