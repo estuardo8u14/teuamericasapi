@@ -30,6 +30,15 @@ conf = ConnectionConfig(
 
 app = FastAPI()
 
+origins = ["http://localhost",
+    "http://localhost:3000/",
+    "http://localhost:3000",
+    "https://teu-americas-logistics.netlify.app/ahorros",
+    "https://teu-americas-logistics.netlify.app/",
+    "https://teu-americas-logistics.netlify.app",
+    " https://teuamericasapi.herokuapp.com",
+    "*",]
+
 origins = ["*"]
 
 app.add_middleware(
