@@ -83,6 +83,27 @@ def post_contacto(item:Item):
     else:
         return False
 
+#sacar de  base de datos
+@app.get("/get_contacto")
+def get_contacto(id : str):
+    mydb = mysql.connector.connect(
+        host="sql5.freesqldatabase.com",
+        user="sql5580269",
+        password="fi5NuGf3Ha",
+        database="sql5580269"
+    )
+    mycursor = mydb.cursor()
+
+    sql = "SELECT * FROM teuweb where id="+ id +""
+    
+    mycursor.execute(sql)
+    results = mycursor.fetchall()
+
+    
+    data = []
+    
+    print(results) 
+
 
 #Correo
 """ @app.post("/email")
